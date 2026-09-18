@@ -1359,7 +1359,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/scope-manager@npm:8.56.1, @typescript-eslint/scope-manager@npm:^8.55.0":
+"@typescript-eslint/scope-manager@npm:8.56.1":
   version: 8.56.1
   resolution: "@typescript-eslint/scope-manager@npm:8.56.1"
   dependencies:
@@ -1369,7 +1369,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/scope-manager@npm:8.70.0":
+"@typescript-eslint/scope-manager@npm:8.70.0, @typescript-eslint/scope-manager@npm:^8.58.0":
   version: 8.70.0
   resolution: "@typescript-eslint/scope-manager@npm:8.70.0"
   dependencies:
@@ -1465,7 +1465,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/utils@npm:8.56.1, @typescript-eslint/utils@npm:^8.55.0":
+"@typescript-eslint/utils@npm:8.56.1":
   version: 8.56.1
   resolution: "@typescript-eslint/utils@npm:8.56.1"
   dependencies:
@@ -1477,6 +1477,21 @@ __metadata:
     eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
     typescript: ">=4.8.4 <6.0.0"
   checksum: 10/528cbd187d8288a8cfce24a043f993b93711087f53d2b6f95cdd615a1a4087af1dab083a747761af97474a621c7b14f11c84ee50c250f31566ebc64cf73867fe
+  languageName: node
+  linkType: hard
+
+"@typescript-eslint/utils@npm:^8.58.0":
+  version: 8.70.0
+  resolution: "@typescript-eslint/utils@npm:8.70.0"
+  dependencies:
+    "@eslint-community/eslint-utils": "npm:^4.9.1"
+    "@typescript-eslint/scope-manager": "npm:8.70.0"
+    "@typescript-eslint/types": "npm:8.70.0"
+    "@typescript-eslint/typescript-estree": "npm:8.70.0"
+  peerDependencies:
+    eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
+    typescript: ">=4.8.4 <6.1.0"
+  checksum: 10/518521b1f7e8bb7a5bd7bc2db39e85b3bd1d710d0cf92da9a7d13a3394e9fb99eda76b90b7ecdc334afc60cb4415b8e079439a3cb9b29b6aea7f8ff1f499590b
   languageName: node
   linkType: hard
 
@@ -1546,22 +1561,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vitest/eslint-plugin@npm:^1.6.9":
-  version: 1.6.9
-  resolution: "@vitest/eslint-plugin@npm:1.6.9"
+"@vitest/eslint-plugin@npm:^1.6.27":
+  version: 1.6.27
+  resolution: "@vitest/eslint-plugin@npm:1.6.27"
   dependencies:
-    "@typescript-eslint/scope-manager": "npm:^8.55.0"
-    "@typescript-eslint/utils": "npm:^8.55.0"
+    "@typescript-eslint/scope-manager": "npm:^8.58.0"
+    "@typescript-eslint/utils": "npm:^8.58.0"
   peerDependencies:
+    "@typescript-eslint/eslint-plugin": "*"
     eslint: ">=8.57.0"
     typescript: ">=5.0.0"
     vitest: "*"
   peerDependenciesMeta:
+    "@typescript-eslint/eslint-plugin":
+      optional: true
     typescript:
       optional: true
     vitest:
       optional: true
-  checksum: 10/b718dc25635bdd997b37302db7e1184f26dd872e99d139684b754e960acc2f2fdce9a48015a473bb7e9724e93cd6aa67939a6183e4dfa26417cb8c5b35dea2df
+  checksum: 10/4f5795107fa79bf2d95d7b2600e1508946235c6e0779dc0ff8a650f746d707b4320db8c6ded382986947b4cd28df6514b05f4202126df149e2980eb3e04fc35b
   languageName: node
   linkType: hard
 
@@ -2272,7 +2290,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": "npm:^8.56.1"
     "@typescript-eslint/parser": "npm:^8.70.0"
     "@vitest/coverage-v8": "npm:^4.0.18"
-    "@vitest/eslint-plugin": "npm:^1.6.9"
+    "@vitest/eslint-plugin": "npm:^1.6.27"
     axios: "npm:^1.20.0"
     esbuild: "npm:^0.28.2"
     eslint: "npm:^10.10.0"
