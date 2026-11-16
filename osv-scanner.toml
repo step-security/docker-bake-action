@@ -1,0 +1,7 @@
+[[IgnoredVulns]]
+id = "GHSA-3g3m-2fjr-6pw4"
+reason = "glob (10.5.0, 13.0.7) is a transitive dev/build dependency; no fix available within the current major versions"
+
+[[IgnoredVulns]]
+id = "GHSA-g3hv-75wg-m249"
+reason = "minimatch (9.0.9, 10.2.6) is a transitive dev/build dependency; no fix available within the current major versions"
