@@ -4,21 +4,38 @@
   "type": "module",
   "main": "src/main.ts",
   "scripts": {
+<<<<<<< 73884927dde395a44bd261869ba4307b5f9063b2
     "build": "esbuild src/main.ts --bundle --platform=node --target=node24 --format=cjs --outfile=dist/index.cjs --sourcemap --minify --keep-names"
+=======
+    "build": "esbuild src/main.ts --bundle --platform=node --target=node24 --format=cjs --outfile=dist/index.cjs --sourcemap --minify --keep-names && yarn run license",
+    "license": "generate-license-file --input package.json --output dist/licenses.txt --overwrite --ci --no-spinner --eol lf"
+>>>>>>> 0d226f59d1bbee1d77a804bcdb70697de44c3073
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/docker/bake-action.git",
     "directory": "subaction/matrix"
   },
+<<<<<<< 73884927dde395a44bd261869ba4307b5f9063b2
   "author": "step-security",
+=======
+  "author": "Docker Inc.",
+>>>>>>> 0d226f59d1bbee1d77a804bcdb70697de44c3073
   "license": "Apache-2.0",
   "dependencies": {
     "@actions/core": "^3.0.1",
     "@actions/exec": "^3.0.0",
+<<<<<<< 73884927dde395a44bd261869ba4307b5f9063b2
     "@docker/actions-toolkit": "^0.100.0"
   },
   "devDependencies": {
     "esbuild": "^0.28.2"
+=======
+    "@docker/actions-toolkit": "^0.106.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.0",
+    "generate-license-file": "^4.1.1"
+>>>>>>> 0d226f59d1bbee1d77a804bcdb70697de44c3073
   }
 }
