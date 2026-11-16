@@ -6,18 +6,12 @@ import {Buildx} from '@docker/actions-toolkit/lib/buildx/buildx.js';
 import {Util} from '@docker/actions-toolkit/lib/util.js';
 
 import {BakeDefinition, Target} from '@docker/actions-toolkit/lib/types/buildx/bake.js';
-<<<<<<< 73884927dde395a44bd261869ba4307b5f9063b2
 import {validateSubscription} from './subscription.js';
-=======
->>>>>>> 0d226f59d1bbee1d77a804bcdb70697de44c3073
 
 actionsToolkit.run(
   // main
   async () => {
-<<<<<<< 73884927dde395a44bd261869ba4307b5f9063b2
     await validateSubscription();
-=======
->>>>>>> 0d226f59d1bbee1d77a804bcdb70697de44c3073
     const workdir = core.getInput('workdir');
     const files = Util.getInputList('files');
     const target = core.getInput('target');
