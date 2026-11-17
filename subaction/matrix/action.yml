@@ -1,5 +1,6 @@
 # https://docs.github.com/en/actions/creating-actions/metadata-syntax-for-github-actions
 name: 'Matrix'
+author: step-security
 description: 'Generate a matrix from a Bake definition to help distributing builds in your workflow'
 
 inputs:

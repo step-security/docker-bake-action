@@ -1,0 +1,17 @@
+{
+  "$comment": "Managed automatically when syncing with upstream. Do not edit by hand.",
+  "schema_version": 1,
+  "onboarding_type": "copied",
+  "action_type": "node",
+  "upstream": {
+    "repository": "docker/bake-action",
+    "synced_tag": "v7.5.0",
+    "synced_commit": "59cb1203cd42bcefd40a1b6d73b589e48c86040e",
+    "archived": false
+  },
+  "build": {
+    "package_manager": "yarn@4.15.0",
+    "node_version": "24",
+    "script": "build"
+  }
+}
