@@ -57,11 +57,11 @@ jobs:
                [{"target":"lint","dockerfile":"./hack/dockerfiles/lint.Dockerfile"},{"target":"lint","dockerfile":"./hack/dockerfiles/lint.Dockerfile","platforms":"darwin/amd64"},{"target":"lint","dockerfile":"./hack/dockerfiles/lint.Dockerfile","platforms":"darwin/arm64"},{"target":"lint","dockerfile":"./hack/dockerfiles/lint.Dockerfile","platforms":"linux/amd64"},{"target":"lint","dockerfile":"./hack/dockerfiles/lint.Dockerfile","platforms":"linux/arm64"},{"target":"lint","dockerfile":"./hack/dockerfiles/lint.Dockerfile","platforms":"linux/s390x"},{"target":"lint","dockerfile":"./hack/dockerfiles/lint.Dockerfile","platforms":"linux/ppc64le"},{"target":"lint","dockerfile":"./hack/dockerfiles/lint.Dockerfile","platforms":"linux/riscv64"},{"target":"lint","dockerfile":"./hack/dockerfiles/lint.Dockerfile","platforms":"windows/amd64"},{"target":"lint","dockerfile":"./hack/dockerfiles/lint.Dockerfile","platforms":"windows/arm64"},{"target":"lint-gopls","dockerfile":"./hack/dockerfiles/lint.Dockerfile"},{"target":"lint-gopls","dockerfile":"./hack/dockerfiles/lint.Dockerfile","platforms":"darwin/amd64"},{"target":"lint-gopls","dockerfile":"./hack/dockerfiles/lint.Dockerfile","platforms":"darwin/arm64"},{"target":"lint-gopls","dockerfile":"./hack/dockerfiles/lint.Dockerfile","platforms":"linux/amd64"},{"target":"lint-gopls","dockerfile":"./hack/dockerfiles/lint.Dockerfile","platforms":"linux/arm64"},{"target":"lint-gopls","dockerfile":"./hack/dockerfiles/lint.Dockerfile","platforms":"linux/s390x"},{"target":"lint-gopls","dockerfile":"./hack/dockerfiles/lint.Dockerfile","platforms":"linux/ppc64le"},{"target":"lint-gopls","dockerfile":"./hack/dockerfiles/lint.Dockerfile","platforms":"linux/riscv64"},{"target":"lint-gopls","dockerfile":"./hack/dockerfiles/lint.Dockerfile","platforms":"windows/amd64"},{"target":"lint-gopls","dockerfile":"./hack/dockerfiles/lint.Dockerfile","platforms":"windows/arm64"},{"target":"validate-docs","dockerfile":"./hack/dockerfiles/docs.Dockerfile"},{"target":"validate-vendor","dockerfile":"./hack/dockerfiles/vendor.Dockerfile"}]
     steps:
       -
-        - name: Harden the runner (Audit all outbound calls)
-          uses: step-security/harden-runner@v2
-          with:
-            egress-policy: audit
-
+        name: Harden the runner (Audit all outbound calls)
+        uses: step-security/harden-runner@v2
+        with:
+          egress-policy: audit
+      -
         name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       -
